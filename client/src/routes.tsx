@@ -68,7 +68,7 @@ export const renderRoutes = (props: RouteProps, isAuthenticated: boolean) => {
     
     return (
       <Route key={path} path={path}>
-        <Component {...props} />
+        {() => <Component {...props} />}
       </Route>
     );
   });
