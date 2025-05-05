@@ -2,22 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="VELIN - Your Ultimate Podcast Experience" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Podcast Heaven</title>
+    <script type="module">
+      // Handle client-side routing
+      window.addEventListener('popstate', () => {
+        window.location.reload();
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <noscript>
-      <div style="padding: 20px; text-align: center; font-family: system-ui, sans-serif;">
-        <h2 style="color: #ff7b00;">JavaScript Required</h2>
-        <p>VELIN requires JavaScript to run. Please enable JavaScript in your browser settings and reload the page.</p>
-      </div>
-    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
-</html>
+</html> 
